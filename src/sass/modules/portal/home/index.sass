@@ -1,0 +1,17 @@
+.index_home
+    @import './../../../layouts/general/config.sass'
+    @import './../../../render/portal/home/index/carouselEdit.sass'
+    @import './../../../render/portal/home/index/phrases.sass'
+    @import './../../../render/portal/home/index/aboutus.sass'
+    @import './../../../render/portal/home/index/news.sass'
+    @import './../../../render/portal/home/index/agreement.sass'
+
+    .content_main_preloader
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 200px
+        @include breakpoint(600px)
+            min-height: 300px
+        @include breakpoint(1000px)
+            min-height: 600px

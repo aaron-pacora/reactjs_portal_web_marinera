@@ -1,0 +1,89 @@
+.contenedor
+    left: 0
+    right: 0
+    padding-left: 0
+    padding-right: 0
+    margin-left: 0
+    margin-right: 0
+    margin-bottom: 50px
+    z-index: +1
+    background: black    
+    .header
+        width: 100%
+        background-color: #000
+        display: flex
+        position: fixed
+        justify-content: center
+        z-index: +800        
+        height: 60px
+        top: 0
+        .menu
+            background: black
+            height: 60px
+            width: 100%
+            display: flex
+            justify-content: space-between    
+            position: fixed
+            top: 0
+            z-index: +900
+            align-self: center
+            .button
+                margin-left: 20px
+                border: none
+                outline: none
+                background: none
+                cursor: pointer
+                display: none
+            .button_logo
+                .tiped_logo
+                    margin-top: 12px
+                    margin-right: 10px
+                    width: 200px
+                    height: 35px
+                    img
+                        width: 100%
+                        height: 100%
+            .content_elements
+                padding: 10px 20px
+                z-index: 1
+                display: flex
+                flex-direction: row
+                justify-content: flex-end
+                .element
+                    padding-top: 10px
+                    transition: 1s
+                    padding-left: 30px
+                    a
+                        color: $color_white
+                        &.selected
+                            color: $color_green_default
+                            pointer-events: none
+                            cursor: default
+                    a:hover
+                        color: $color_green_default
+            @include breakpoint(320px 825px)
+                width: 100%
+                display: block
+                justify-content: flex-end
+                padding-left: 0px
+                .button_logo
+                    display: flex
+                    justify-content: space-between
+                    align-self: center
+                    .button
+                        display: block
+                .content_elements
+                    font-size: 18px
+                    margin-left: 0
+                    z-index: +800
+                    padding-left: 0px
+                    background-color: black
+                    margin-right: 0px
+                    position: absolute
+                    flex-direction: column
+                    margin-left: -70%
+                    transition: all 0.7s
+                .clicked
+                    margin-left: 0px
+            @include breakpoint(320px 2560px)
+                max-width: 1250px

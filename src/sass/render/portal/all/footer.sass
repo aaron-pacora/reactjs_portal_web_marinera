@@ -1,0 +1,128 @@
+.content_footer_portal
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 100%
+    position: absolute
+    .footer
+        background-color: #3a3a3a
+        width: 100%
+        color: white
+        height: auto
+        text-align: center
+        align-content: center
+        .title
+            padding-top: 30px
+            padding-left: 2px
+            padding-right: auto
+            font-size: 18px
+        .social_network
+            margin-top: 20px
+            margin-right: auto
+            margin-left: auto
+            width: 40px
+            a
+                width: 100%
+                svg
+                    width: 35px
+                    height: 35px
+                    fill: $color_gray_91
+                    transition: fill 0.2s linear
+                    &:hover
+                        fill: $color_green_light
+        .part_bottom_footer
+            margin-top: 40px
+            display: flex
+            justify-content: center
+            width: 100%
+            background-color: #212121
+            height: 50px
+            bottom: 0px
+            position: relative
+            .copyright
+                align-self: center
+                display: flex
+                justify-content: space-between
+                padding: 10px
+                background-color: #212121
+                max-width: 1250px
+                bottom: 0px
+                width: 100%
+                .powered
+                    padding-top: 2px
+                    font-size: 10px
+        .form
+            width: 100%
+            display: flex
+            margin-top: 25px
+            justify-content: center
+            .inputFooter
+                padding-left: 15px
+                border: none
+                border: 1px solid silver
+                border-radius: 5px
+                max-width: 250px
+                min-width: 240px
+                height: 30px
+                margin-top: 6px
+                color: #313131
+                margin-right: 15px
+                margin-bottom: 8px
+                background-color: white
+                outline: none
+            .buttonFooter
+                width: 150px
+                border: none
+                height: 40px
+                color: white
+                border-radius: 10px
+                background: none
+                transition: 0.5s
+                background-color: $color_green_default
+                cursor: pointer
+            .buttonFooter:hover
+                background-color: white
+                border: 1px solid $color_green_default
+                box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+                color: $color_green_default
+        @include breakpoint(320px 730px)
+            .title
+                padding-top: 30px
+                font-size: 16px
+            .social_network
+                margin-top: 10px
+                width: 30px
+            .part_bottom_footer
+                margin-top: 10px
+                .copyright
+                    flex-direction: column
+                    margin-top: 10px
+                    .copyright_text
+                        font-size: 12px
+                    .powered
+                        font-size: 8px
+            .form
+                flex-direction: column
+                margin-top: 15px
+                .inputFooter
+                    margin-left: auto
+                    margin-right: auto
+                .buttonFooter
+                    margin-top: 5px
+                    margin-left: auto
+                    margin-right: auto
+        .sponsors_container
+            margin: auto
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+            align-items: center
+            width: 80%
+            height: 120px
+            .content_img
+                width: 100px
+                padding-top: 20px
+                .img
+                    width: 100%
+    .section
+        padding-bottom: 0

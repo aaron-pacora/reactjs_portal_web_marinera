@@ -1,0 +1,26 @@
+.content_title
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-end     
+    .title
+        margin: 0 0 5px
+        font-size: 30px
+        color: $color_beach
+        @include breakpoint(422px 840px)
+            width: 100% 
+    .space_bar
+        border: none
+        margin: 0 10px  10px 
+        width: 40px
+        height: 2px
+        background: linear-gradient(to left, #8A0BDB, #00FFBA)
+        @include breakpoint(0 422px)
+            width: 100% 
+            margin: 0 10px  
+           
+    .description
+        font-style: italic
+        font-size: 15px
+        color: $color_gray_default 
+        @include breakpoint(0 422px)
+            margin: 0 10px  10px 

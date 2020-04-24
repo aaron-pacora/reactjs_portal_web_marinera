@@ -1,0 +1,38 @@
+.about_portal
+    display: flex
+    justify-content: center
+    .col
+        margin-left: 60px
+        margin-right: 60px
+        .card-stacked
+            .card-content
+                font-size: 17px
+                h1
+                    color: #00A2D1
+                button
+                    text-align: center
+                    border: 1px solid #00A2D1
+                    outline: none
+                    background: none
+                    cursor: pointer
+                    width: 150px
+                    height: 40px
+                    border-radius: 10px
+                    color: #00A2D1
+                    transition: 0.5
+                    margin-top: 15px
+                    transition: 0.5s
+                    margin-right: 0
+                button:hover
+                    background-color: #00A2D1
+                    color: white
+                    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+        @include breakpoint(320px 590px)
+            margin-left: 0
+            margin-right: 0
+            // max-height: 600px
+            .card-stacked
+                .card-content
+                    font-size: 14px
+        @include breakpoint(590px 3000px)
+            max-width: 1250px

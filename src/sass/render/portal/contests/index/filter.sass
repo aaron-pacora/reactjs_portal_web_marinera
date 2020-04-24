@@ -1,0 +1,68 @@
+.content_filter
+    margin: 40px 0 30px
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    &>*
+        margin: 0
+    @mixin __font_size_filter()
+        margin: 0
+        font-size: 20px
+        padding: 10px
+        border: 1px solid $color_gray_default 
+        border-radius: 10px
+        color: $color_gray_default !important
+    .content_picker
+        cursor: pointer
+        position: relative
+        width: 200px
+        margin-right: 20px
+        @include breakpoint(0 600px)
+            margin: 0 0 10px 
+            width: 100%
+        .datepicker //input text
+            text-align: center
+            cursor: pointer
+            @include __font_size_filter()
+            width: 100%
+            &::placeholder
+                color:  darken($color_gray_default,35%) !important
+        svg
+            pointer-events: none
+            top: 10px
+            position: absolute
+            right: 10px
+            height: 20px
+            width: 20px
+            fill: $color_gray_default 
+        
+
+    .content_select
+        position: relative
+        @include breakpoint(0 600px)
+            width: 100%
+        .caret //icon
+            margin-left: 10px
+        .select-dropdown //input
+            text-overflow: ellipsis
+            @include __font_size_filter()
+           
+        .dropdown-content.select-dropdown //ul
+            border-radius: 10px
+            li
+                text-overflow: ellipsis
+        .arrow_down
+            pointer-events: none
+            fill: $color_gray_default
+            position: absolute
+            top: 5px
+            right: 10px
+            width: 30px
+            height: 30px
+                
+    .picker__holder //la screen completa(content_modal)
+        .picker__frame //el modal
+            border-radius: 10px
+
+        
+            

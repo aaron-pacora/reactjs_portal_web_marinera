@@ -1,0 +1,96 @@
+.contact
+    padding-left: 100px
+    width: 100%
+    display: flex
+    padding-top: 50px
+    // margin-top: 30px
+    justify-content: space-between
+    .form_content
+        width: 100%
+        .title
+            width: 300px
+            // height: 10px
+            display: flex
+            justify-content: space-between
+            // padding-left: 10px
+            padding-bottom: 20px
+            .titulo
+                margin-left: 10px
+                color: #00A2D1
+                font-size: 30px
+            hr
+                background: linear-gradient(to left,#00FFBA,#8A0BDB)
+                margin-top: 22px
+                width: 30px
+                height: 2px
+            .subtitle  
+                margin-top: 13px
+                color: silver
+                font-size: 15px
+        .form
+            width: 100%
+            .form-group
+                padding: 10px
+                display: flex
+                flex-direction: column
+                justify-items: end
+                align-content: flex-end
+                .input_contact
+                    font-size: 17px
+                    height: 45px
+                    margin-bottom: 15px
+                    border-radius: 10px
+                    padding-left: 15px
+                    border: 1px solid silver
+                .description
+                    resize: none
+                    padding-top: 5px
+                    width: 100%
+                    height: 200px
+                    padding-left: 15px
+                    border-radius: 10px 
+                    color: $color_txt_dark
+                    font-size: 17px
+                    transition: box-shadow 0.3s ease-out
+                    z-index: 1
+                    background: none
+                .button_design
+                    text-align: center
+                    border: 1px solid #00A2D1
+                    outline: none
+                    background: none
+                    cursor: pointer
+                    width: 150px
+                    height: 40px
+                    border-radius: 10px
+                    color: #00A2D1
+                    transition: 0.5
+                    margin-top: 15px
+                    transition: 0.5s
+                    margin-right: 0
+                .button_design:hover
+                    background-color: #00A2D1
+                    color: white
+                    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+                input:focus
+                    outline: 0
+                    border: 1px $color_beach solid                    
+                    box-shadow: 2px 2px $color_beach
+                .description:focus
+                    outline: 0
+                    border: 1px $color_beach solid                    
+                    box-shadow: 2px 2px $color_beach
+
+    @include breakpoint(320px 900px)
+        padding-left: 0px
+        margin-top: -15px
+        .formulario
+            .title
+                padding-bottom: 10px
+            .form
+                // display: flex
+                // justify-content: flex-end
+                .form-group
+                    .button_design
+                        padding-right: 0
+                        margin-right: 0

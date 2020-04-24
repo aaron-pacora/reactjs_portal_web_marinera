@@ -1,0 +1,27 @@
+.phrases
+    display: flex
+    width: 100%
+    flex-wrap: wrap
+    justify-content: space-around
+    margin-top: 15px
+    .phrase_item
+        justify-content: space-around
+        width: 350px
+        display: flex
+        margin-bottom: 10px
+        .icon_phrase
+            margin-right: 15px
+            padding-top: 15px
+            width: 80px
+            svg
+                width: 80px
+                height: 80px
+        div
+            .title_phrase
+                font-size: 18px
+            .text_phrase
+                width: 190px
+                font-size: 13px
+                color: #95989A
+    @include breakpoint(320px 800px)
+        justify-content: center

@@ -1,0 +1,41 @@
+.content_page
+    .slider_image
+        display: flex
+        justify-content: center
+        .slider
+            img
+                max-height: 560px
+                -webkit-filter: brightness(30%);
+                filter: brightness(30%);
+            .slides
+        .text_logo        
+            position: absolute
+            z-index: +2
+            top: 80px  
+            width: 100%   
+            display: flex
+            justify-content: center        
+            align-self: center
+            flex-wrap: wrap
+            .image_text
+                // margin-right: 10%
+                // margin-left: 25% 
+                max-width: 900px
+                img
+                    width: 100%
+                @include breakpoint(400px 500px)
+                    margin-top: 12%
+                @include breakpoint(320px 400px)
+                    margin-top: 20%
+            .image_logo
+                // margin-right: 10%
+                // margin-left: 50%
+                margin-top: 2%
+                max-width: 150px
+                // width: 22%
+                img
+                    max-width: 100%
+                @include breakpoint(320px 700px)
+                    margin-top: 5%
+            @include breakpoint(1048px 2560px)
+                max-width: 900px
